@@ -1,0 +1,80 @@
+\documentclass[a4paper,12pt]{report} % Tipo di documento
+\usepackage[utf8]{inputenc}           % Codifica
+\usepackage[T1]{fontenc}              % Font moderni
+\usepackage[italian]{babel}
+\usepackage{amsmath,amssymb,amsfonts} % Pacchetti per matematica
+%\usepackage{siunitx}                  % Unità di misura
+\usepackage{physics}                  % Simboli fisici
+\usepackage{graphicx}                 % Inserire immagini
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{float}                    % Gestione di immagini/flottanti
+\usepackage{xcolor}                   % Colori personalizzati
+\usepackage{hyperref}                 % Link cliccabili
+\usepackage{geometry}                 % Personalizzazione margini
+\geometry{margin=2.5cm}               % Margini di 2.5 cm
+\usepackage{tikz}                     % Disegni e diagrammi
+\usepackage[version=4]{mhchem}                   % Chimica, per formule come \ce{H2O}
+\usepackage{booktabs}                 % Tabelle migliorate
+\usepackage{cancel}                   % Per cancellare termini (\cancel{})
+\usepackage{enumitem}                 % Liste personalizzate
+%\usepackage{multicol}                 % Layout a colonne
+\usepackage{fancyhdr}                 % Intestazioni e piè di pagina
+\setlength{\headheight}{14.5pt}
+\pagestyle{fancy}                     % Abilita intestazioni/piè di pagina
+\fancyhead[L]{Appunti di Analisi I}      % Testo a sinistra nell'intestazione
+\fancyhead[R]{\today}                 % Data a destra
+\fancyfoot[C]{\thepage}               % Numerazione delle pagine al centro
+\renewcommand{\baselinestretch}{1.2}  % Interlinea
+\usepackage{xcolor}
+\DeclareEmphSequence{\bfseries\itshape}
+\newcommand{\mean}[1]{\langle #1 \rangle}
+
+\title{Appunti di Analisi I}
+\author{Alessandro Consoli, Sonia Facciolà e Joey Butchers}
+\date{Anno 2024/2025}
+
+\begin{document}
+
+    \input{extra/copertina}
+    
+    \tableofcontents
+
+
+    \maketitle
+    
+\chapter{Funzioni e Insiemi numerici}
+
+    \section{introduzione}
+
+    \input{chapters/Funzioni_e_Insiemi_numerici/Funzioni_e_Insiemi_numerici.tex}
+
+\chapter{Campo Complesso}
+
+    \section{Campo Complesso}
+
+    \input{chapters/Campo_Complesso/Campo_Complesso.tex}
+
+
+\chapter{Limiti di Funzioni}
+
+    \section{Limiti di Funzioni}
+
+    \input{chapters/limiti_di_funzioni/limiti_di_funzioni.tex}
+
+
+
+\chapter{Funzioni Continue}
+
+    \section{Funzioni Continue}
+    
+    \input{chapters/funzioni_contnue/funzioni_continue.tex}
+    
+
+\chapter{limiti notevoli, derivate notevoli, sviluppi di Taylor notevoli}
+
+\input{chapters/lista_cose_notevoli/cose_notevoli.tex}
+
+
+    \end{document}
+    
