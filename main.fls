@@ -1,6 +1,6 @@
-PWD e:\latex
+PWD c:\Users\Alessandro\Desktop\Valinor\analisi-I
 INPUT C:\Users\Alessandro\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT e:\latex\main.tex
+INPUT c:\Users\Alessandro\Desktop\Valinor\analisi-I\main.tex
 OUTPUT main.log
 INPUT C:\Users\Alessandro\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\Alessandro\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1739132474.86509 "e:/latex/main.tex" "main.pdf" "main" 1739132478.00623 0
+["pdflatex"] 1740084619.83441 "c:/Users/Alessandro/Desktop/Valinor/analisi-I/main.tex" "main.pdf" "main" 1740084622.70152 0
   "C:/Users/Alessandro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1738935559 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Alessandro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbi1200.pk" 1738936946 42728 7579e3c33a4c0670fd4263c373a52504 ""
   "C:/Users/Alessandro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1738936240 31952 7db4b2b23851da5408f26a196b1f5dc6 ""
@@ -232,19 +232,19 @@
   "C:/Users/Alessandro/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1730400552 10214 61188260d324e94bc2f66825d7d3fdf4 ""
   "C:/Users/Alessandro/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Alessandro/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
+  "c:/Users/Alessandro/Desktop/Valinor/analisi-I/main.tex" 1740084488 2691 920785e66e1f09e4110c6786a5626742 ""
   "chapters/Campo_Complesso/Campo_Complesso.tex" 1739112121 0 d41d8cd98f00b204e9800998ecf8427e ""
   "chapters/Funzioni_e_Insiemi_numerici/Funzioni_e_Insiemi_numerici.tex" 1739050165 3844 c091c0264162a8c5d383c191e4d887e6 ""
   "chapters/funzioni_contnue/funzioni_continue.tex" 1738968520 500 ad67e800a10b2ce4edabcc602d5142a6 ""
   "chapters/limiti_di_funzioni/limiti_di_funzioni.tex" 1739112036 1059 4195829cf22305b4e84066f08c4ab17c ""
   "chapters/lista_cose_notevoli/cose_notevoli.tex" 1739123551 1456 14f6e21bcd3928cee149c9d6aed4df5f ""
-  "e:/latex/main.tex" 1739132436 2691 920785e66e1f09e4110c6786a5626742 ""
   "extra/copertina.tex" 1739132474 1077 61556190dfa71dc2470b925655a2a424 ""
   "images/Logo+UniCT.png" 1738160600 74003 d5c93e58d0483b16eaff365be54a9179 ""
   "images/LogoDfa2.png" 1738160602 138005 c81b5105b77294815d3364276378553b ""
-  "main.aux" 1739132477 2682 6756e6a5eae96f5d42aa97267ec21060 "pdflatex"
-  "main.out" 1739132477 2297 9a263e6e40ff1f9506e596c1633855b2 "pdflatex"
-  "main.tex" 1739132436 2691 920785e66e1f09e4110c6786a5626742 ""
-  "main.toc" 1739132477 1209 0902bce14f0192c2f48be40e2b22b788 "pdflatex"
+  "main.aux" 1740084622 2682 6756e6a5eae96f5d42aa97267ec21060 "pdflatex"
+  "main.out" 1740084622 2297 9a263e6e40ff1f9506e596c1633855b2 "pdflatex"
+  "main.tex" 1740084488 2691 920785e66e1f09e4110c6786a5626742 ""
+  "main.toc" 1740084622 1209 0902bce14f0192c2f48be40e2b22b788 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
