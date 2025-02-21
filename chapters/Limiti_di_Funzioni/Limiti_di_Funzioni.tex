@@ -20,4 +20,23 @@ abbiamo 5 tipi di intervalli illimitati:
     \item $[a,+\infty) = \{x \in \mathbb{R} : x \geq a\}$
     \item $(-\infty,b) = \{x \in \mathbb{R} : x < b\}$
     \end{itemize}
-    
+
+\subsection{Teorema del Confronto}
+\label{subsec:teorema_del_confronto}
+
+Esempio di teorema del Confronto:
+\begin{equation}
+    \lim_{x \to +\infty} \frac{\sin x}{x}    
+    \end{equation}
+    Visto che i valori del $sin(x)$ sono compresi tra -1 e 1 per $\forall x \in \mathbb{R}$, possiamo scrivere:
+    \begin{equation}
+        -1 \leq \sin x \leq 1 \Rightarrow -\frac{1}{x} \leq \frac{\sin x}{x} \leq \frac{1}{x}
+        \end{equation}
+        Per il teorema del confronto, se:
+        \begin{equation}
+            \lim_{x \to +\infty} -\frac{1}{x} = 0 \quad \lim_{x \to +\infty} \frac{1}{x} = 0
+            \end{equation}
+            allora:
+            \begin{equation}
+                \lim_{x \to +\infty} \frac{\sin x}{x} = 0
+                \end{equation}
