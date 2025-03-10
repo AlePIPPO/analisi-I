@@ -1,5 +1,9 @@
 \section{Serie Numeriche}
     Questo capitolo tratta delle serie numeriche, ovvero di somme infinite di numeri reali.
+    
+    
+    \begin{definizione}
+        
     Sia $\{a_n\}$ una successione di numeri reali. La somma parziale di ordine $n$ è definita come:
     \[
     S_n = \sum_{n=1}^n a_n
@@ -10,31 +14,72 @@
     Allora la successione $\{a_n\}$ tende a zero,
     Quindi la successione delle somme parziali è limitata.
     Quand'è che una serie converge?
+    \end{definizione}
+    \subsection{Criteri di Convergenza}
     \begin{itemize}
         \item Se la serie converge, allora la successione $\{a_n\}$ tende a zero.
         \item Se la serie converge, allora la successione delle somme parziali è limitata.
     \end{itemize}
     Per verificare queste condizioni la prima cosa da notare anche ad occhio è se la successione $\{a_n\}$ tende a zero. Se non tende a zero, la serie \emph{non può convergere} perchè sarebbe come sommare infiniti numeri diversi da zero.
-    Quando $\{a_n\}$ tende a zero, la serie può comunque non convergere.
-    \subsection{Criterio del Rapporto}
-          \begin{definizione}
-             Sia \emph{$\sum_{n=1}^{+\infty}a_n$} una serie a termini positivi e supponiamo esista il limite:
-                \[ \lim_{n \to +\infty} \frac{a_{n+1}}{a_n} = l \]
-                Allora: se $l < 1$ la serie converge, se $l > 1$ la serie diverge, se $l = 1$ il criterio non ci da alcuna indicazione sul carattere della serie.
-          \end{definizione}
-                \emph{Spesso se questo criterio non ci da indicazione sul carattere della serie allora neanche il criterio della radice}.
+    Quando $\{a_n\}$ tende a zero, la serie può comunque non convergere, quindi è condizione necessaria ma non sufficente.
 
-    \subsection{Criterio della Radice}
-    \begin{definizione}
-        Sia \emph{$\sum_{n=1}^{+\infty}a_n$} una serie a termini positivi e supponiamo esista il limite:
-        \[ \lim_{n \to +\infty} \sqrt[n]{a_n} = l \]
-        Allora: se $l < 1$ la serie converge, se $l > 1$ la serie diverge, se $l = 1$ il criterio non ci da alcuna indicazione sul carattere della serie.
-    \end{definizione} 
-    
+\subsection{La serie geomentrica}
+\begin{definizione}
+    Una serie geometrica è una serie della forma:
+    \begin{equation}
+     \sum_{k=1}^{+\infty} x^k = 1 + x + x^2 + \ldots + x^{k} + \ldots 
+    \end{equation}
+\end{definizione}
+
+
+    La serie geometrica converge se e solo se $|x| < 1$ e in tal caso la somma della serie è:
+    \[ \sum_{n=1}^{+\infty} x^k = \frac{1-x{n+1}}{1-x} \]
+
+    perche facendo il limite si ha:
+    \begin{equation}
+                \lim_{n \to +\infty} \frac {1-x^{n+1}} {1-x} = \begin{cases}
+                    \frac{1}{1-x} & \text{se } -1 < x < 1 \\
+                    \text{non esiste} & \text{se } x \leq -1
+                \end{cases}
+    \end{equation}
+    \begin{esempio}[Serie Geometrica]
+        Studiamo la serie:
+            \[ \sum_{n=1}^{+\infty} \left( \frac{1}{2} \right)^n \]
+        Questa è una serie geometrica con $x = 1/2$, quindi converge perchè $|1/2| < 1$ e la somma della serie è:
+        \[ \sum_{n=1}^{+\infty} \left( \frac{1}{2} \right)^n = \frac{1}{1-1/2} = 2 \]
+    \end{esempio}
+    \subsection{Criterio del Confronto}
+
+
+
+
+
+        \subsection{Criterio del Rapporto}
+             \begin{definizione}
+                    Sia \emph{$\sum_{n=1}^{+\infty}a_n$} una serie a termini positivi e supponiamo esista il limite:
+                    \[ \lim_{n \to +\infty} \frac{a_{n+1}}{a_n} = l \]
+                    Allora: se $l < 1$ la serie converge, se $l > 1$ la serie diverge, se $l = 1$ il criterio non ci da alcuna indicazione sul carattere della serie.
+            \end{definizione}
+                    \emph{Spesso se questo criterio non ci da indicazione sul carattere della serie allora neanche il criterio della radice}.
+        \begin{esempio}[Criterio del Rapporto]
+            Studiamo la serie:
+                \[ \sum_{n=1}^{+\infty} \frac{1}{n!} \]
+            Applichiamo il criterio del rapporto:
+            in questo caso si ha che:
+            \begin{equation} \lim_{n \to +\infty} \frac{1/(n+1)!}{1/n!} = \lim_{n \to +\infty} \frac{1}{n+1} = 0
+            \end{equation}
+            Quindi per il criterio del rapporto $0<1$ quindi la serie converge.
+        \end{esempio}
+        \subsection{Criterio della Radice}
+        \begin{definizione}
+            Sia \emph{$\sum_{n=1}^{+\infty}a_n$} una serie a termini positivi e supponiamo esista il limite:
+            \[ \lim_{n \to +\infty} \sqrt[n]{a_n} = l \]
+            Allora: se $l < 1$ la serie converge, se $l > 1$ la serie diverge, se $l = 1$ il criterio non ci da alcuna indicazione sul carattere della serie.
+        \end{definizione} 
+        
     \emph{Spesso se questo criterio non ci da indicazione sul carattere della serie allora neanche il criterio del rapporto}
-\subsection{Esempi di serie dove studiare il carattere con i criteri del rapporto e della radice}
-    \subsubsection{Esempio 1}
-    \[ \sum_{n=1}^{+\infty} \frac{1}{n^n} \]
+
+
     \begin{esempio}[Criterio della Radice]
         Studiamo la serie:
             \[ \sum_{n=1}^{+\infty} \frac{1}{n^n} \]
@@ -42,8 +87,19 @@
         in questo caso si ha che:
         \begin{equation} \lim_{n \to +\infty} \sqrt[n]{1/n^n} = \lim_{n \to +\infty} \frac{1}{n} = 0
         \end{equation}
-        Quindi per il criterio del rapporto $0<1$ quindi la serie converge.
+        Quindi per il criterio della radice $0<1$ quindi la serie converge.
             \end{esempio}
     \subsection{Criterio di Cauchy}
-    Sia $\{a_n\}$ una successione di numeri reali. La serie $\sum_{k=1}^{+\infty} a_k$ converge se e solo se per ogni $\varepsilon > 0$ esiste $n_0 \in \mathbb{N}$ tale che per ogni $n \geq m \geq n_0$ si ha:
-    \[ |a_{m+1} + a_{m+2} + \ldots + a_n| < \varepsilon \]
+            \begin{definizione}
+                    Sia $\{a_n\}$ una successione di numeri reali. La serie $\sum_{k=1}^{+\infty} a_k$ converge se e solo se per ogni $\varepsilon > 0$ esiste $n_0 \in \mathbb{N}$ tale che per ogni $n \geq m \geq n_0$ si ha:
+                      \[ |a_{m+1} + a_{m+2} + \ldots + a_n| < \varepsilon \]
+            \end{definizione}
+    \begin{esempio}[Criterio di Cauchy]
+        Studiamo la serie:
+            \[ \sum_{n=1}^{+\infty} \frac{1}{n^2} \]
+        Applichiamo il criterio di Cauchy:
+        in questo caso si ha che:
+        \begin{equation} |a_{m+1} + a_{m+2} + \ldots + a_n| = \left| \frac{1}{(m+1)^2} + \frac{1}{(m+2)^2} + \ldots + \frac{1}{n^2} \right| < \varepsilon
+        \end{equation}
+        Quindi per il criterio di Cauchy la serie converge.
+    \end{esempio}
