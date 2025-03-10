@@ -431,6 +431,7 @@ INPUT .\chapters\Funzioni_e_Insiemi_numerici\Funzioni_e_Insiemi_numerici.tex
 INPUT .\chapters\Funzioni_e_Insiemi_numerici\Funzioni_e_Insiemi_numerici.tex
 INPUT chapters\Funzioni_e_Insiemi_numerici\Funzioni_e_Insiemi_numerici.tex
 INPUT C:\Users\Alessandro\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbi1200.tfm
+INPUT C:\Users\Alessandro\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsx1200.tfm
 INPUT C:\Users\Alessandro\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
 INPUT C:\Users\Alessandro\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0600.tfm
 INPUT C:\Users\Alessandro\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
@@ -449,12 +450,11 @@ INPUT chapters\Successioni_ricorsive\Succesioni_ricorsive.tex
 INPUT .\chapters\Serie\serie.tex
 INPUT .\chapters\Serie\serie.tex
 INPUT chapters\Serie\serie.tex
-INPUT C:\Users\Alessandro\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsx1200.tfm
 INPUT main.aux
-INPUT C:\Users\Alessandro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk
-INPUT C:\Users\Alessandro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk
 INPUT C:\Users\Alessandro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\Alessandro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\Alessandro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk
+INPUT C:\Users\Alessandro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk
 INPUT C:\Users\Alessandro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1200.pk
 INPUT C:\Users\Alessandro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1200.pk
 INPUT C:\Users\Alessandro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk

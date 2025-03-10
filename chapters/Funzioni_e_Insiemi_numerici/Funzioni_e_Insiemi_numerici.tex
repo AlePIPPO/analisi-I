@@ -7,52 +7,94 @@
         \end{equation}
         dove $x$ indica il generico elemento di $X$ e $f(x)$ il corrispondente elemento di $Y$.
         Se $f(x_0)=y_0$ si dice che $y_0$ è l'immagine di $x_0$ e si scrive $y_0=f(x_0)$. 
-        \\\\ \emph{Definizione di prolungamento}: di una funzione: siano $X,Y,Z$ tre insiemi e $f: X \to Y$ e $g: Y \to Z$ due funzioni. Si dice che $g$ è il prolungamento di $f$ se:
+        \\\\ \emph{Definizione di prolungamento}: 
+        \begin{definizione} di una funzione: siano $X,Y,Z$ tre insiemi e $f: X \to Y$ e $g: Y \to Z$ due funzioni. Si dice che $g$ è il prolungamento di $f$ se:
         \begin{equation}
             g(x)=g(f(x)) \quad \forall x \in X
         \end{equation}
-        \emph{Definizione di funzione inversa}: sia $f: X \to Y$ una funzione. Si dice che $f$ è invertibile se esiste una funzione $g: Y \to X$ tale che:
-        \begin{equation}
-            g(f(x))=x \quad \forall x \in X
-        \end{equation}
-    \emph{Definizione di funzione suriettiva}: si dice suriettiva se ogni elemento del codominio $Y$ ha almeno un elemento nel dominio $X$ che lo mappa su di esso:
+    \end{definizione}
+    \vspace{0.1cm} % Adjust the spacing to avoid the empty box issue
+    \emph{Definizione di funzione suriettiva}: 
+    \begin{definizione} 
+        si dice suriettiva se ogni elemento del codominio $Y$ ha almeno un elemento nel dominio $X$ che lo mappa su di esso:
         \begin{equation}
             \forall y \in Y \quad \exists x \in X \quad \text{tale che} \quad f(x)=y
         \end{equation}  
-    \emph{Definizione di funzione iniettiva}: si dice iniettiva se ad ogni elemento del dominio $X$ corrisponde un solo elemento del codominio $Y$:
+    \end{definizione}
+    \emph{Definizione di funzione iniettiva}: 
+    \begin{definizione} si dice iniettiva se ad ogni elemento del dominio $X$ corrisponde un solo elemento del codominio $Y$:
         \begin{equation}
             \forall x_1,x_2 \in X \quad \text{tali che} \quad x_1 \neq x_2 \quad \text{allora} \quad f(x_1) \neq f(x_2)
         \end{equation}
-\emph{Diciamo che $f$ ha una corrispondenza biunivoca tra $X$ e $Y$ se è sia suriettiva che iniettiva.}
+    \end{definizione}
+\begin{definizione}
+    Diciamo che $f$ ha una corrispondenza biunivoca tra $X$ e $Y$ se è sia suriettiva che iniettiva.
+\end{definizione}
 
-\subsection{Esempi di funzioni}
+\begin{esempio}
     \begin{itemize}
         \item $f(x)=x^2$ è una funzione suriettiva ma non iniettiva.
         \item $f(x)=x^3$ è una funzione suriettiva e iniettiva.
         \item $f(x)=\sin(x)$ è una funzione suriettiva ma non iniettiva.
-        \item $f(x)=\cos(x)$ è una funzione suriettiva ma non iniettiva.
-        \item $f(x)=\tan(x)$ è una funzione suriettiva ma non iniettiva.
-        \item $f(x)=\log(x)$ è una funzione suriettiva ma non iniettiva.
-        \item $f(x)=\exp(x)$ è una funzione suriettiva e iniettiva.
+        \item $f(x)=\exp(x)$ è una funzione suriettiva e iniettiva(corrispondeza biunivoca).
     \end{itemize}
+\end{esempio}
 \section{Relazioni di equivalenza}
-    \label{sec:Relazioni_di_equivalenza} 
-    Una relazione di equivalenza è una relazione binaria $\sim$ su un insieme $X$ che soddisfa le seguenti proprietà:
+         \label{sec:Relazioni_di_equivalenza} 
+
+             Una relazione di equivalenza è una relazione binaria $\sim$ su un insieme $X$ che soddisfa le seguenti proprietà:
+        \begin{definizione}
+             \begin{itemize}
+                  \item \emph{Riflessiva}: $\forall x \in X, \; x \, \sim \, x$
+                   \item \emph{Simmetrica}: $\forall x, y \in X, \; x \, \sim \, y \implies y \, \sim \, x$
+                  \item \emph{Transitiva}: $\forall x, y, z \in X, \; x \, \sim \, y \land y \, \sim \, z \implies x \, \sim \, z$
+              \end{itemize}
+        \end{definizione}
+        \emph{Definizione di classe di equivalenza}:
+    \begin{definizione} 
+          sia $\sim$ una relazione di equivalenza su un insieme $X$ e $x \in X$. La classe di equivalenza di $x$ rispetto a $\sim$ è l'insieme:
+            \begin{equation}
+                 [x] = \{y \in X \; | \; y \, \sim \, x\}   
+             \end{equation}
+    \end{definizione}
+        \emph{Definizione di insieme quoziente}:
+    \begin{definizione}
+                sia $\sim$ una relazione di equivalenza su un insieme $X$. L'insieme quoziente di $X$ rispetto a $\sim$ è l'insieme:
+                \begin{equation}
+                    X/\sim = \{[x] \; | \; x \in X\}
+                \end{equation}
+     \end{definizione} 
+         \emph{Definizione di funzione di proiezione}:
+    \begin{definizione} 
+            sia $\sim$ una relazione di equivalenza su un insieme $X$. La funzione di proiezione è la funzione:
+            \begin{equation}
+                 \pi: X \to X/\sim \quad \text{tale che} \quad \pi(x) = [x]
+          \end{equation}
+    \end{definizione}
+    \emph{Definizione di funzione inversa}:
+    \begin{definizione} 
+        sia $f: X \to Y$ una funzione. Si dice che $f$ è invertibile se è suriettiva e iniettiva. In tal caso diciamo che è invertibile e che la sua inversa è $f^{-1}: Y \to X$ tale che:
+        \begin{equation}
+            y=f^{-1}(x) \quad \forall x \in X
+        \end{equation}
+    \end{definizione}
+\subsection{Funzioni Monotòne}
+Parlando di monotonia di una funzione nel suo insieme $A$ possiamo distinguere 4 casi:
+    \begin{definizione}
+        Diciamo che una funzione $f: A \to \mathbb{R}$ è monotòna se $\forall{x_1, x_2}$ $\in A$ vale:
+    \end{definizione}
+\begin{align}
+    &f \text{ è crescente in } A \text{ se } x_1 < x_2 \implies f(x_1) \leq f(x_2) \\
+    &f \text{ è strettamente crescente in } A \text{ se } x_1 < x_2 \implies f(x_1) < f(x_2) \\
+    &f \text{ è decrescente in } A \text{ se } x_1 < x_2 \implies f(x_1) \geq f(x_2) \\
+    &f \text{ è strettamente decrescente in } A \text{ se } x_1 < x_2 \implies f(x_1) > f(x_2) \\
+    &f \text{ è costante in } A \text{ se } x_1, x_2 \in A \implies f(x_1) = f(x_2)
+\end{align}
+\begin{esempio}
     \begin{itemize}
-        \item \emph{Riflessiva}: $\forall x \in X, \; x \, \sim \, x$
-        \item \emph{Simmetrica}: $\forall x, y \in X, \; x \, \sim \, y \implies y \, \sim \, x$
-        \item \emph{Transitiva}: $\forall x, y, z \in X, \; x \, \sim \, y \land y \, \sim \, z \implies x \, \sim \, z$
+        \item $f(x)=x^2$ è strettamente crescente in $\mathbb{R}^+$
+        \item $f(x)=x^3$ è crescente in $\mathbb{R}$
+        \item $f(x)=\sin(x)$ è crescente in $\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$
+        \item $f(x)= e^{x}$ è strettamente crescente in $\mathbb{R}$
     \end{itemize}
-    \emph{Definizione di classe di equivalenza}: sia $\sim$ una relazione di equivalenza su un insieme $X$ e $x \in X$. La classe di equivalenza di $x$ rispetto a $\sim$ è l'insieme:
-    \begin{equation}
-        [x] = \{y \in X \; | \; y \, \sim \, x\}   
-    \end{equation}
-    \emph{Definizione di insieme quoziente}: sia $\sim$ una relazione di equivalenza su un insieme $X$. L'insieme quoziente di $X$ rispetto a $\sim$ è l'insieme:
-    \begin{equation}
-        X/\sim = \{[x] \; | \; x \in X\}
-    \end{equation}
-    \emph{Definizione di funzione di proiezione}: sia $\sim$ una relazione di equivalenza su un insieme $X$. La funzione di proiezione è la funzione:
-    \begin{equation}
-        \pi: X \to X/\sim \quad \text{tale che} \quad \pi(x) = [x]
-    \end{equation}
-    
+\end{esempio}

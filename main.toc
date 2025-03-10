@@ -1,26 +1,26 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
 \contentsline {chapter}{\numberline {1}Funzioni e Insiemi numerici}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}introduzione}{1}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Esempi di funzioni}{2}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.1}Introduzione}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Relazioni di equivalenza}{2}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Campo Complesso}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Numeri Complessi}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Definizione}{3}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Limiti di Funzioni}{4}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Limiti di Funzioni}{4}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}intervalli limitati}{4}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}intervalli illimitati}{4}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Teorema del Confronto}{5}{subsection.3.1.3}%
-\contentsline {chapter}{\numberline {4}Funzioni Continue}{6}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Funzioni Continue}{6}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Successioni ricorsive}{7}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Successioni definite per ricorrenza}{7}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Serie}{8}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Serie Numeriche}{8}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Criteri di Convergenza}{8}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}La serie geomentrica}{9}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Criterio del Confronto}{9}{subsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.1.4}Criterio del Rapporto}{9}{subsection.6.1.4}%
-\contentsline {subsection}{\numberline {6.1.5}Criterio della Radice}{10}{subsection.6.1.5}%
-\contentsline {subsection}{\numberline {6.1.6}Criterio di Cauchy}{11}{subsection.6.1.6}%
+\contentsline {subsection}{\numberline {1.2.1}Funzioni Monotòne}{3}{subsection.1.2.1}%
+\contentsline {chapter}{\numberline {2}Campo Complesso}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Numeri Complessi}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Definizione}{5}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Limiti di Funzioni}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Limiti di Funzioni}{6}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}intervalli limitati}{6}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}intervalli illimitati}{6}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Teorema del Confronto}{7}{subsection.3.1.3}%
+\contentsline {chapter}{\numberline {4}Funzioni Continue}{8}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Funzioni Continue}{8}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Successioni ricorsive}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Successioni definite per ricorrenza}{9}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Serie}{10}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Serie Numeriche}{10}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Criteri di Convergenza}{10}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}La serie geomentrica}{11}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Criterio del Confronto}{11}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Criterio del Rapporto}{11}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Criterio della Radice}{12}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}Criterio di Cauchy}{13}{subsection.6.1.6}%
