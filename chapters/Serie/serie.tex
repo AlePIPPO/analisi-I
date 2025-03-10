@@ -1,0 +1,49 @@
+\section{Serie Numeriche}
+    Questo capitolo tratta delle serie numeriche, ovvero di somme infinite di numeri reali.
+    Sia $\{a_n\}$ una successione di numeri reali. La somma parziale di ordine $n$ è definita come:
+    \[
+    S_n = \sum_{n=1}^n a_n
+    \] si dice serie una successione di somme parziali, ovvero:
+    \[ S = \sum_{n=1}^{+\infty} a_n \]
+    Se esiste il limite della successione delle somme parziali, ovvero: \[ \lim_{n \to +\infty} S_n = S \] allora si dice che la serie converge e si scrive: \[ S = \sum_{k=1}^{+\infty} a_n \] altrimenti si dice che la serie diverge.
+    Se la serie converge, si dice che la somma della serie è $S$, 
+    Allora la successione $\{a_n\}$ tende a zero,
+    Quindi la successione delle somme parziali è limitata.
+    Quand'è che una serie converge?
+    \begin{itemize}
+        \item Se la serie converge, allora la successione $\{a_n\}$ tende a zero.
+        \item Se la serie converge, allora la successione delle somme parziali è limitata.
+    \end{itemize}
+    Per verificare queste condizioni la prima cosa da notare anche ad occhio è se la successione $\{a_n\}$ tende a zero. Se non tende a zero, la serie \emph{non può convergere} perchè sarebbe come sommare infiniti numeri diversi da zero.
+    Quando $\{a_n\}$ tende a zero, la serie può comunque non convergere.
+    \subsection{Criterio del Rapporto}
+          \begin{definizione}
+             Sia \emph{$\sum_{n=1}^{+\infty}a_n$} una serie a termini positivi e supponiamo esista il limite:
+                \[ \lim_{n \to +\infty} \frac{a_{n+1}}{a_n} = l \]
+                Allora: se $l < 1$ la serie converge, se $l > 1$ la serie diverge, se $l = 1$ il criterio non ci da alcuna indicazione sul carattere della serie.
+          \end{definizione}
+                \emph{Spesso se questo criterio non ci da indicazione sul carattere della serie allora neanche il criterio della radice}.
+
+    \subsection{Criterio della Radice}
+    \begin{definizione}
+        Sia \emph{$\sum_{n=1}^{+\infty}a_n$} una serie a termini positivi e supponiamo esista il limite:
+        \[ \lim_{n \to +\infty} \sqrt[n]{a_n} = l \]
+        Allora: se $l < 1$ la serie converge, se $l > 1$ la serie diverge, se $l = 1$ il criterio non ci da alcuna indicazione sul carattere della serie.
+    \end{definizione} 
+    
+    \emph{Spesso se questo criterio non ci da indicazione sul carattere della serie allora neanche il criterio del rapporto}
+\subsection{Esempi di serie dove studiare il carattere con i criteri del rapporto e della radice}
+    \subsubsection{Esempio 1}
+    \[ \sum_{n=1}^{+\infty} \frac{1}{n^n} \]
+    \begin{esempio}[Criterio della Radice]
+        Studiamo la serie:
+            \[ \sum_{n=1}^{+\infty} \frac{1}{n^n} \]
+        Applichiamo il criterio della radice:
+        in questo caso si ha che:
+        \begin{equation} \lim_{n \to +\infty} \sqrt[n]{1/n^n} = \lim_{n \to +\infty} \frac{1}{n} = 0
+        \end{equation}
+        Quindi per il criterio del rapporto $0<1$ quindi la serie converge.
+            \end{esempio}
+    \subsection{Criterio di Cauchy}
+    Sia $\{a_n\}$ una successione di numeri reali. La serie $\sum_{k=1}^{+\infty} a_k$ converge se e solo se per ogni $\varepsilon > 0$ esiste $n_0 \in \mathbb{N}$ tale che per ogni $n \geq m \geq n_0$ si ha:
+    \[ |a_{m+1} + a_{m+2} + \ldots + a_n| < \varepsilon \]

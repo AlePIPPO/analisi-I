@@ -8,6 +8,8 @@
 \usepackage{graphicx}                 % Inserire immagini
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
+\usepackage{ambienti}
+\usepackage{bookmark}
 \usepackage{float}                    % Gestione di immagini/flottanti
 \usepackage{xcolor}                   % Colori personalizzati
 \usepackage{hyperref}                 % Link cliccabili
@@ -29,7 +31,8 @@
 \usepackage{xcolor}
 \DeclareEmphSequence{\bfseries\itshape}
 \newcommand{\mean}[1]{\langle #1 \rangle}
-
+\setlength{\parindent}{0pt}           % Rientro automatico
+\setlength{\parskip}{4pt}   
 \title{Appunti di Analisi I}
 \author{Alessandro Consoli, Sonia Facciolà e Joey Butchers}
 \date{Anno 2024/2025}
@@ -51,7 +54,7 @@
 
 \chapter{Campo Complesso}
 
-    \section{Campo Complesso}
+    \section{Numeri Complessi}
 
     \input{chapters/Campo_Complesso/Campo_Complesso.tex}
 
@@ -72,7 +75,7 @@
     
 \chapter{Successioni ricorsive}
 
-    \section{Successioni ricorsive}
+    \section{Successioni definite per ricorrenza}
     
     \input{chapters/Successioni_ricorsive/Succesioni_ricorsive.tex}
 
@@ -80,6 +83,9 @@
 
 %\input{chapters/lista_cose_notevoli/cose_notevoli.tex}
 
+\chapter{Serie}
+
+    \input{chapters/Serie/serie.tex}
 
     \end{document}
     

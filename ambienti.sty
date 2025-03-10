@@ -1,0 +1,101 @@
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+%AMBIENTE ESEMPIO
+
+\mdfdefinestyle{esempio}{ 
+  linewidth=0pt,
+  linecolor=black,
+  %backgroundcolor=gray!30,
+  outerlinecolor=black,
+  bottomline=false,rightline=false,topline=false,
+  outerlinewidth=2pt,
+  roundcorner=0pt,
+  innertopmargin=2pt,
+  innerbottommargin=5pt,
+  skipabove=\topsep,
+  skipbelow=\topsep,
+  nobreak=false,
+  frametitlefont=\bfseries\sffamily
+  %frametitlealignment=\centering,
+}
+
+\newcounter{esempio}[chapter]
+\renewcommand{\theesempio}{\thechapter.\arabic{esempio}}
+
+\newenvironment{esempio}[1][]{%
+  \refstepcounter{esempio}% Incrementa il contatore e permette il riferimento
+  \ifstrempty{#1}
+    {\mdfsetup{frametitle={Esempio \theesempio}}}
+    {\mdfsetup{frametitle={Esempio \theesempio: #1}}}
+  \begin{mdframed}[style=esempio]
+}{%
+  \end{mdframed}
+}
+
+\newcommand{\Defref}[1]{{Def.\,\ref{#1}}}%riferimento all'esercizio
+
+%AMBIENTE Definizioni
+
+\mdfdefinestyle{definizione}{ 
+  linewidth=0pt,
+  linecolor=blue!80!cyan,
+  backgroundcolor=blue!10!cyan!15!,
+  outerlinecolor=blue!80!cyan,
+  %bottomline=false,rightline=false,topline=false,
+  outerlinewidth=2pt,
+  roundcorner=3pt,
+  innertopmargin=2pt,
+  innerbottommargin=5pt,
+  skipabove=\topsep,
+  skipbelow=\topsep,
+  nobreak=false,
+  frametitlefont=\bfseries\sffamily
+  %frametitlealignment=\centering,
+}
+
+\newcounter{definizione}[chapter]
+\renewcommand{\thedefinizione}{\thechapter.\arabic{definizione}}
+
+\newenvironment{definizione}[1][]{%
+  \refstepcounter{definizione}% Incrementa il contatore e permette il riferimento
+  \ifstrempty{#1}
+    {\mdfsetup{frametitle={Definizione \thedefinizione}}}
+    {\mdfsetup{frametitle={Definizione \thedefinizione: #1}}}
+  \begin{mdframed}[style=definizione]
+}{%
+  \end{mdframed}
+}
+
+%AMBIENTE APPROFONDIMENTO
+
+\mdfdefinestyle{approfondimento}{ 
+  linewidth=0pt,
+  linecolor=black,
+  %backgroundcolor=orange!30!gray,
+  outerlinecolor=teal,
+  bottomline=false,rightline=false,topline=false,
+  outerlinewidth=2pt,
+  roundcorner=0pt,
+  innertopmargin=2pt,
+  innerbottommargin=5pt,
+  skipabove=\topsep,
+  skipbelow=\topsep,
+  nobreak=false,
+  frametitlefont=\bfseries\sffamily
+  %frametitlealignment=\centering,
+}
+
+\newcounter{approfondimento}[chapter]
+\renewcommand{\theapprofondimento}{\thechapter.\arabic{approfondimento}}
+
+\newenvironment{approfondimento}[1][]{%
+  \refstepcounter{approfondimento}% Incrementa il contatore e permette il riferimento
+  \ifstrempty{#1}
+    {\mdfsetup{frametitle={Approfondimento \theapprofondimento}}}
+    {\mdfsetup{frametitle={Approfondimento \theapprofondimento: #1}}}
+  \begin{mdframed}[style=approfondimento]
+}{%
+  \end{mdframed}
+}
