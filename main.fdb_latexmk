@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1741638772.71188 "c:/Users/Alessandro/Desktop/Valinor/analisi-I/main.tex" "main.pdf" "main" 1741638775.69088 0
+["pdflatex"] 1742235990.51938 "c:/Users/Alessandro/Desktop/Valinor/analisi-I/main.tex" "main.pdf" "main" 1742235995.02314 0
   "C:/Users/Alessandro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1741442444 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Alessandro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbi1200.pk" 1738936946 42728 7579e3c33a4c0670fd4263c373a52504 ""
   "C:/Users/Alessandro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1738936240 31952 7db4b2b23851da5408f26a196b1f5dc6 ""
@@ -245,7 +245,7 @@
   "C:/Users/Alessandro/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/Alessandro/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/Alessandro/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "ambienti.sty" 1741452274 2772 a565ff058b5f83031f4b61daec967d4b ""
+  "ambienti.sty" 1742235983 2766 c65ee841ba7a8855b5dd71a7bc64cde2 ""
   "c:/Users/Alessandro/Desktop/Valinor/analisi-I/main.tex" 1741621530 3046 9ab3ca332fa0225b5e6bea04dd6b8177 ""
   "chapters/Campo_Complesso/Campo_Complesso.tex" 1740258231 810 ad6784e7d3e56b54be6aadac278fb505 ""
   "chapters/Funzioni_e_Insiemi_numerici/Funzioni_e_Insiemi_numerici.tex" 1741638769 5568 1d34b2db8e1836b5657f7788cc8348d5 ""
@@ -256,9 +256,9 @@
   "extra/copertina.tex" 1739132474 1077 61556190dfa71dc2470b925655a2a424 ""
   "images/Logo+UniCT.png" 1738160600 74003 d5c93e58d0483b16eaff365be54a9179 ""
   "images/LogoDfa2.png" 1738160602 138005 c81b5105b77294815d3364276378553b ""
-  "main.aux" 1741638775 11907 c7c51afc9d06c8b1c3cb1d4478410e90 "pdflatex"
+  "main.aux" 1742235994 11907 c7c51afc9d06c8b1c3cb1d4478410e90 "pdflatex"
   "main.tex" 1741621530 3046 9ab3ca332fa0225b5e6bea04dd6b8177 ""
-  "main.toc" 1741638775 2038 933e548a9e8540351346cda2824d8f5e "pdflatex"
+  "main.toc" 1742235994 2038 933e548a9e8540351346cda2824d8f5e "pdflatex"
   (generated)
   "main.aux"
   "main.log"
