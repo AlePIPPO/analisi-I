@@ -444,9 +444,9 @@ INPUT chapters\limiti_di_funzioni\limiti_di_funzioni.tex
 INPUT .\chapters\funzioni_contnue\funzioni_continue.tex
 INPUT .\chapters\funzioni_contnue\funzioni_continue.tex
 INPUT chapters\funzioni_contnue\funzioni_continue.tex
-INPUT .\chapters\Successioni_ricorsive\Succesioni_ricorsive.tex
-INPUT .\chapters\Successioni_ricorsive\Succesioni_ricorsive.tex
-INPUT chapters\Successioni_ricorsive\Succesioni_ricorsive.tex
+INPUT .\chapters\Successioni\Succesioni.tex
+INPUT .\chapters\Successioni\Succesioni.tex
+INPUT chapters\Successioni\Succesioni.tex
 INPUT .\chapters\Serie\serie.tex
 INPUT .\chapters\Serie\serie.tex
 INPUT chapters\Serie\serie.tex

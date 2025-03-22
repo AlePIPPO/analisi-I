@@ -30,14 +30,18 @@
 \renewcommand{\baselinestretch}{1.2}  % Interlinea
 \usepackage{xcolor}
 \DeclareEmphSequence{\bfseries\itshape}
+
+% Ensure all environments are properly closed
+\usepackage{mdframed}
 \newcommand{\mean}[1]{\langle #1 \rangle}
 \setlength{\parindent}{0pt}           % Rientro automatico
 \setlength{\parskip}{4pt}   
 \title{Appunti di Analisi I}
-\author{Alessandro Consoli, Sonia Facciolà e Joey Butchers}
+% Ensure no unclosed mdframed environment
+\begin{document}
+
 \date{Anno 2024/2025}
 
-\begin{document}
 
     \input{extra/copertina}
     
@@ -73,11 +77,9 @@
     
     \input{chapters/funzioni_contnue/funzioni_continue.tex}
     
-\chapter{Successioni ricorsive}
-
-    \section{Successioni definite per ricorrenza}
+\chapter{Successioni}
     
-    \input{chapters/Successioni_ricorsive/Succesioni_ricorsive.tex}
+    \input{chapters/Successioni/Succesioni.tex}
 
 %\chapter{limiti notevoli, derivate notevoli, sviluppi di Taylor notevoli}
 
@@ -87,5 +89,5 @@
 
     \input{chapters/Serie/serie.tex}
 
-    \end{document}
+\end{document}
     

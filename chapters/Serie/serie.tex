@@ -15,21 +15,42 @@
     Quindi la successione delle somme parziali è limitata.
     Quand'è che una serie converge?
     \end{definizione}
-    \subsection{Criteri di Convergenza}
+    \subsection{Condizioni Affinchè una Serie Converga}
     \begin{itemize}
         \item Se la serie converge, allora la successione $\{a_n\}$ tende a zero.
         \item Se la serie converge, allora la successione delle somme parziali è limitata.
     \end{itemize}
     Per verificare queste condizioni la prima cosa da notare anche ad occhio è se la successione $\{a_n\}$ tende a zero. Se non tende a zero, la serie \emph{non può convergere} perchè sarebbe come sommare infiniti numeri diversi da zero.
-    Quando $\{a_n\}$ tende a zero, la serie può comunque non convergere, quindi è condizione necessaria ma non sufficente.
+    Quando $\{a_n\}$ tende a zero, la serie può comunque non convergere, quindi è condizione necessaria ma non sufficente. 
+        \begin{approfondimento}
+            Se la serie di termine generale $a_k$ e $b_k$ sono regolari e se:
+                \begin{equation}
+                    \sum_{k=1}^{+\infty} a_k + \sum_{k=1}^{+\infty} b_k 
+                \end{equation}
+            ha significato nella retta estesa $\mathbb{R} \cup \{+\infty, -\infty\}$ allora:
+                \begin{equation}
+                    \sum_{k=1}^{+\infty} (a_k + b_k) = \sum_{k=1}^{+\infty} a_k + \sum_{k=1}^{+\infty} b_k 
+                \end{equation}
+        \end{approfondimento}
+        \begin{approfondimento}
+            se la serie di termine generale $a_k$ è regolare, anche la serie di termine generale $c \cdot a_k$ è regolare per ogni $c \in \mathbb{R}$ e si ha:
+                \begin{equation}
+                    \sum_{k=1}^{+\infty} c \cdot a_k = c \cdot \sum_{k=1}^{+\infty} a_k
+                \end{equation}
+        \end{approfondimento}
+    \begin{definizione}
+        Se le due serie convergono, allora la serie della somma dei termini converge e la somma della serie è la somma delle somme delle due serie.
+        Se la serie converge, allora la serie moltiplicata per un numero reale converge e la somma della serie è il numero reale moltiplicato per la somma della serie.
+    \end{definizione}
+        
 
-\subsection{La serie geomentrica}
-\begin{definizione}
-    Una serie geometrica è una serie della forma:
-    \begin{equation}
-     \sum_{k=1}^{+\infty} x^k = 1 + x + x^2 + \ldots + x^{k} + \ldots 
-    \end{equation}
-\end{definizione}
+\subsection{La Serie Geomentrica}
+        \begin{definizione}
+            Una serie geometrica è una serie della forma:
+             \begin{equation}
+                \sum_{k=1}^{+\infty} x^k = 1 + x + x^2 + \ldots + x^{k} + \ldots 
+            \end{equation}
+        \end{definizione}
 
 
     La serie geometrica converge se e solo se $|x| < 1$ e in tal caso la somma della serie è:
@@ -46,15 +67,64 @@
         Studiamo la serie:
             \[ \sum_{n=1}^{+\infty} \left( \frac{1}{2} \right)^n \]
         Questa è una serie geometrica con $x = 1/2$, quindi converge perchè $|1/2| < 1$ e la somma della serie è:
-        \[ \sum_{n=1}^{+\infty} \left( \frac{1}{2} \right)^n = \frac{1}{1-1/2} = 2 \]
+        \[ \sum_{n=1}^{+\infty} \left( \frac{1}{2} \right)^n = \frac{1}{1-\frac{1}{2}} = 2 \]
     \end{esempio}
+
+\subsection{La Serie Armonica}
+        \begin{definizione}
+            La serie armonica è una serie della forma:
+            \[ \sum_{n=1}^{+\infty} \frac{1}{n} = 1 + \frac{1}{2} + \frac{1}{3} + \ldots + \frac{1}{n} + \ldots \]
+        \end{definizione}
+        La serie armonica diverge, ovvero non converge, infatti:
+        \[ \lim_{n \to +\infty} \sum_{k=1}^{n} \frac{1}{k} = +\infty \]
+        \begin{esempio}[Serie Armonica]
+            Studiamo la serie:
+                \[ \sum_{n=1}^{+\infty} \frac{1}{n} \]
+            Questa è una serie armonica, quindi diverge.
+        \end{esempio} DIMOSTRAZIONE CON INTEGRALE DA METTERE DOPO AVERLI CAPITI
+\newpage
+\section{Criteri di Convergenza}
     \subsection{Criterio del Confronto}
-
-
-
-
-
-        \subsection{Criterio del Rapporto}
+        \begin{definizione}
+            Siano $\{a_n\}$ e $\{b_n\}$ due successioni di numeri reali tali che $0 \leq a_n \leq b_n$ per ogni $n \in \mathbb{N}$. Allora:
+            \begin{itemize}
+                \item $\sum_{n=1}^{+\infty} b_n < +\infty$ $\to$ $\sum_{n=1}^{+\infty} a_n < + \infty$.
+                \item $\sum_{n=1}^{+\infty} a_n = +\infty$ $\sum_{n=1}^{+\infty} b_n =+\infty$.
+            \end{itemize}
+        \end{definizione}
+        Quindi se confrontiamo una serie $a_n$ con una serie $b_n$ e la serie $b_n$ converge, allora anche la serie $a_n$ converge. Se la serie $b_n$ diverge, allora anche la serie $a_n$ diverge.
+        Per utilizzare il criterio del confronto è necessario trovare una serie $b_n$ che sia più semplice da trattare rispetto alla serie $a_n$.
+        Per farlo possiamo usare i limiti quindi:
+            \begin{equation}
+                \lim_{n \to +\infty} \frac{a_n}{b_n} = l
+            \end{equation}
+        \begin{itemize}
+            \item se $ 0 < l < +\infty$ allora $\sum_{n=1}^{+\infty} a_n$ e $\sum_{n=1}^{+\infty} b_n$ hanno lo stesso carattere(in genere si sceglie una serie $b_n$ convergente per "ingabbiare" la prima).
+            \item se $l = 0$ allora $\sum_{n=1}^{+\infty} b_n$ converge $\to$ $\sum_{n=1}^{+\infty} a_n$ converge.
+            \item se $l = +\infty$ allora $\sum_{n=1}^{+\infty} b_n$ diverge $\to$ $\sum_{n=1}^{+\infty} a_n$ diverge.
+        \end{itemize}
+                \begin{approfondimento}
+                    se la serie $b_n$ diverge si possono fare due cose:
+                        \begin{itemize}
+                            \item se $a_n$ è "infinito di ordine superiore" rispetto alla serie $b_n$ allora se il limite tende a zero allora la serie $a_n$ diverge.
+                            \item se $a_n$ è "infinito di ordine inferiore" rispetto alla serie $b_n$ allora se il limite tende a zero allora la serie $a_n$ converge.
+                        \end{itemize}
+                        quindi per $l=0$ si ha che la serie $a_n$ diverge e, per $l=+\infty$ si ha che la serie $a_n$ converge.
+                \end{approfondimento}
+            \begin{approfondimento}
+                se $l=0$ diamo che la serie $a_n$ converge perchè la serie $b_n$ è "infinito di ordine superiore" rispetto alla serie $a_n$, quindi se il limite tende a zero, visto che la serie $b_n$ converge, allora anche la serie $a_n$ converge(perchè è "più piccola" della $b_n$). Con lo stesso regionamento possiamo spiegare perchè se il limite fa $l=+\infty$ allora la serie $a_n$ diverge.
+            \end{approfondimento}
+        \begin{esempio}[Criterio del Confronto]
+            Studiamo la serie:
+                \[ \sum_{n=1}^{+\infty} \frac{1}{n^2} \]
+            Questa è una serie armonica, quindi diverge. Ma possiamo confrontarla con la serie armonica:
+                \[ \sum_{n=1}^{+\infty} \frac{1}{n^2} \leq \sum_{n=1}^{+\infty} \frac{1}{n} \]
+                    \begin{equation}
+                        \lim_{n \to +\infty} \frac{\frac{1}{n^2}}{\frac{1}{n}} = \lim_{n \to +\infty} \frac{1}{n^2} \cdot n  = \lim_{n \to +\infty} \frac{1}{n}=0
+                    \end{equation}
+            Quindi la serie $\sum_{n=1}^{+\infty} \frac{1}{n^2}$ diverge.
+        \end{esempio}
+    \subsection{Criterio del Rapporto}
              \begin{definizione}
                     Sia \emph{$\sum_{n=1}^{+\infty}a_n$} una serie a termini positivi e supponiamo esista il limite:
                     \[ \lim_{n \to +\infty} \frac{a_{n+1}}{a_n} = l \]
@@ -70,7 +140,7 @@
             \end{equation}
             Quindi per il criterio del rapporto $0<1$ quindi la serie converge.
         \end{esempio}
-        \subsection{Criterio della Radice}
+    \subsection{Criterio della Radice}
         \begin{definizione}
             Sia \emph{$\sum_{n=1}^{+\infty}a_n$} una serie a termini positivi e supponiamo esista il limite:
             \[ \lim_{n \to +\infty} \sqrt[n]{a_n} = l \]
@@ -80,7 +150,7 @@
     \emph{Spesso se questo criterio non ci da indicazione sul carattere della serie allora neanche il criterio del rapporto}
 
 
-    \begin{esempio}[Criterio della Radice]
+        \begin{esempio}[Criterio della Radice]
         Studiamo la serie:
             \[ \sum_{n=1}^{+\infty} \frac{1}{n^n} \]
         Applichiamo il criterio della radice:
@@ -102,4 +172,71 @@
         \begin{equation} |a_{m+1} + a_{m+2} + \ldots + a_n| = \left| \frac{1}{(m+1)^2} + \frac{1}{(m+2)^2} + \ldots + \frac{1}{n^2} \right| < \varepsilon
         \end{equation}
         Quindi per il criterio di Cauchy la serie converge.
+    \end{esempio}
+\section{Serie Alternate}
+    \begin{definizione}
+        Una serie $\sum_{n=1}^{+\infty} (-1)^n a_n$ si dice serie alternata.
+    \end{definizione}
+        \begin{approfondimento}
+            Una serie alternata è una serie in cui i termini sono alternativamente positivi e negativi.
+                \begin{equation}
+                    \sum_{n=1}^{+\infty} (-1)^n a_n = a_1 - a_2 + a_3 - a_4 + \ldots
+                \end{equation}
+        \end{approfondimento}
+    \subsection{Criterio di Leibniz}
+    Il criterio di Leibniz è un criterio di convergenza per le serie alternate, ovvero serie in cui i termini sono alternativamente positivi e negativi. Questo criterio ci dice che se i termini della serie sono decrescenti e il loro limite tende a zero allora la serie converge.
+        \begin{definizione}[Criterio di Leibniz]
+            Sia $\{a_n\}$ una successione di numeri reali tali che:
+            \begin{itemize}
+                \item $a_n \geq 0$ per ogni $n \in \mathbb{N}$.
+                \item $\{a_n\}$ sia decrescente.
+                \item $\lim_{n \to +\infty} a_n = 0$.
+            \end{itemize}
+            Allora la serie alternata $\sum_{n=1}^{+\infty} (-1)^n a_n$ converge.
+        \end{definizione}
+        \begin{esempio}[Criterio di Leibniz]
+            Studiamo la serie:
+                \[ \sum_{n=1}^{+\infty} \frac{(-1)^n}{n} \]
+            Applichiamo il criterio di Leibniz:
+            in questo caso si ha che:
+            \begin{itemize}
+                \item $a_n = \frac{1}{n}$ è decrescente.
+                \item $\lim_{n \to +\infty} \frac{1}{n} = 0$.
+            \end{itemize}
+            Quindi per il criterio di Leibniz la serie converge.
+                \begin{approfondimento}
+                    in questo caso possiamo verificare $\frac{1}{n}$ è decrescente perchè oltre a verificarlo ad occhio possiamo calcolare la derivata della funzione associata e vedere che è negativa.
+                        \begin{equation}
+                            f(x) = \frac{1}{x} \quad f'(x) = -\frac{1}{x^2} < 0
+                        \end{equation}
+                \end{approfondimento}
+        \end{esempio}
+\section{Convergenza Assoluta}
+    \begin{definizione}
+        Una serie $\sum_{n=1}^{+\infty} a_n$ si dice assolutamente convergente se la serie $\sum_{n=1}^{+\infty} |a_n|$ converge.
+    \end{definizione}
+    \begin{approfondimento}
+        Se una serie converge assolutamente, allora converge anche la serie stessa.
+    \end{approfondimento}
+    \begin{esempio}[Convergenza Assoluta]
+        Studiamo la serie:
+            \[ \sum_{n=1}^{+\infty} \frac{(-1)^n}{n} \]
+        Questa è una serie alternata, quindi converge per il criterio di Leibniz. Ma se prendiamo il valore assoluto dei termini:
+            \[ \sum_{n=1}^{+\infty} \left| \frac{(-1)^n}{n} \right| = \sum_{n=1}^{+\infty} \frac{1}{n} \]
+        Questa è una serie armonica, quindi diverge. Quindi la serie $\sum_{n=1}^{+\infty} \frac{(-1)^n}{n}$ converge ma non converge assolutamente.
+            \begin{approfondimento}
+                togliamo $n$ a esponente perchè senza il segno meno dell'uno risulta comunque uno($1^n$).
+            \end{approfondimento}
+    \end{esempio}
+    \begin{approfondimento}
+        Se una serie converge assolutamente, allora converge anche la serie stessa. Ma se una serie converge, non è detto che converga anche assolutamente.
+    \end{approfondimento}
+\section{Esercizi Svolti Sulle Serie}
+    \begin{esempio}
+        Studiamo la serie:
+        \[ \sum_{n=1}^{+\infty} \frac{2^n}{n^5} \]
+        Applichiamo il criterio della radice:
+        in questo caso si ha che:
+        \begin{equation} \lim_{n \to +\infty} \sqrt[n]{\frac{2^n}{n^5}} = \lim_{n \to +\infty} \frac{2}{n^{5/n}} = \lim_{n \to +\infty} \frac{2}{n^{5/n}} = 0
+        \end{equation}
     \end{esempio}

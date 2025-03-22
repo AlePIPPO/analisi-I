@@ -1,0 +1,39 @@
+\section{Successioni Monotòne}
+    \begin{definizione}
+        Una successione $\{a_n\}$ si dice \emph{monotòna crescente} se per ogni $n \in \mathbb{N}$ si ha $a_n \leq a_{n+1}$, ovvero se i termini della successione sono in ordine crescente.
+    \end{definizione}    
+    \begin{definizione}
+        Analogamente si dice \emph{monotòna decrescente} se per ogni $n \in \mathbb{N}$ si ha $a_n \geq a_{n+1}$, ovvero se i termini della successione sono in ordine decrescente.
+    \end{definizione}
+    Quando cerchiamo di capire se la nostra successione di termine generale $a_n$ è monotòna crescente o decrescente una delle possibilità è quella di studiare la funzione associata alla successione.
+    \begin{definizione}
+        Sia $\{a_n\}$ una successione di termini reali e sia $\psi: \mathbb{N} \to \mathbb{R}$ una funzione reale. Se $\psi(x) = a_x$ per ogni $n \in \mathbb{N}$, allora la successione $\{a_n\}$ è monotòna crescente se e solo se la funzione $\psi$ è crescente.
+    \end{definizione}
+    Si applica un ragionamento analogo per le successioni monotòne decrescenti.
+    Per calcolare la monotònia di una (funzione)successione possiamo anche utilizzare il concetto di derivata.
+    Quindi al fine di studiare la monotònia di una successione possiamo:
+    \begin{itemize}
+        \item Studiare la successione direttamente.
+        \item Studiare la funzione associata alla successione.
+        \item Studiare la derivata della funzione associata alla successione.
+    \end{itemize}
+    \begin{esempio}
+        Studiamo la monotònia della successione $\{a_n\}$ definita da $a_n = n^2$.
+        \begin{itemize}
+            \item Studiamo la successione direttamente: $a_n = n^2$ è una successione crescente.
+            \item Studiamo la funzione associata alla successione: $\psi(x) = x^2$ è una funzione crescente.
+            \item Studiamo la derivata della funzione associata alla successione: $\psi'(x) = 2x$ è una funzione crescente.
+        \end{itemize}
+        studiando il segno della derivata delle $\psi'(x)$ possiamo concludere che la successione $\{a_n\}$ è crescente. Perchè la disequaizone $2x > 0$ è verificata per ogni $x > 0$.
+            \begin{approfondimento}
+                riconsiderando la funzione come una successione possiamo facilmete verificare anche la successione visto che i termini $x$ della funzione sono numeri naturali, Quindi viene verificata anche per tutte le $n$ della $a_n$ Saltando il primo termine $n=0$.
+            \end{approfondimento}
+    \end{esempio}
+    \begin{esempio}
+        Studiamo la monotònia della successione $\{a_n\}$ definita da $a_n = \frac{1}{n}$.
+        \begin{itemize}
+            \item Studiamo la successione direttamente: $a_n = \frac{1}{n}$ è una successione decrescente.
+            \item Studiamo la funzione associata alla successione: $\psi(x) = \frac{1}{x}$ è una funzione decrescente.
+            \item Studiamo la derivata della funzione associata alla successione: $\psi'(x) = -\frac{1}{x^2}$ è una funzione decrescente.
+        \end{itemize}
+    \end{esempio}

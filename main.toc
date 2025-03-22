@@ -14,13 +14,19 @@
 \contentsline {subsection}{\numberline {3.1.3}Teorema del Confronto}{7}{subsection.3.1.3}%
 \contentsline {chapter}{\numberline {4}Funzioni Continue}{8}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Funzioni Continue}{8}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Successioni ricorsive}{9}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Successioni definite per ricorrenza}{9}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Serie}{10}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Serie Numeriche}{10}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Criteri di Convergenza}{10}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}La serie geomentrica}{11}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Criterio del Confronto}{11}{subsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.1.4}Criterio del Rapporto}{11}{subsection.6.1.4}%
-\contentsline {subsection}{\numberline {6.1.5}Criterio della Radice}{12}{subsection.6.1.5}%
-\contentsline {subsection}{\numberline {6.1.6}Criterio di Cauchy}{13}{subsection.6.1.6}%
+\contentsline {chapter}{\numberline {5}Successioni}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Successioni Monotòne}{9}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Serie}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Serie Numeriche}{11}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Condizioni Affinchè una Serie Converga}{11}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}La Serie Geomentrica}{12}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}La Serie Armonica}{13}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Criteri di Convergenza}{14}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Criterio del Confronto}{14}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Criterio del Rapporto}{15}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Criterio della Radice}{15}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Criterio di Cauchy}{16}{subsection.6.2.4}%
+\contentsline {section}{\numberline {6.3}Serie Alternate}{16}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Criterio di Leibniz}{17}{subsection.6.3.1}%
+\contentsline {section}{\numberline {6.4}Convergenza Assoluta}{18}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Esercizi Svolti Sulle Serie}{18}{section.6.5}%
